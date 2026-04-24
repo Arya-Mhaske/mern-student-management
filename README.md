@@ -10,9 +10,9 @@
 1. Go to `server`
 2. Install dependencies:
    - `npm install`
-3. Create `.env` from `.env.example`
+3. Create `.env` and paste your credentials
 4. Run server:
-   - `npm run dev`
+   - `node index.js`
 
 Server runs at `http://localhost:5000`
 
@@ -22,7 +22,7 @@ Server runs at `http://localhost:5000`
 2. Install dependencies:
    - `npm install`
 3. Run frontend:
-   - `npm run dev`
+   - `node index.js`
 
 Client runs at `http://localhost:5173`
 
