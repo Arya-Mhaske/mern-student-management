@@ -21,6 +21,22 @@ DO NOT sudo apt install node as it will install an older version of node incompa
 2. nvm install 22
 3. nvm use 22
 
+# TROUBLESHOOTING DEPENDENCY HELL
+
+just try nuking all packages by either 
+
+rm -rf node_modules
+
+OR
+
+rm -rf node_modules package-lock.json
+
+AND THEN
+
+npm install
+
+This usually works for all errors; and doing this is recommended every time you are trying to deploy this repo for the first time even if there may not be dependency errors. First, npm intall using node v 22+ and then nuke using the above commands and reinstall. everything should work fine then.
+
 ## AZURE INBOUND RULES
 under the instance's networking (firewall) settings, allow the following port configurations to accept traffic from all IP's
 
