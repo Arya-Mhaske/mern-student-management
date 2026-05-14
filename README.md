@@ -23,20 +23,28 @@ DO NOT sudo apt install node as it will install an older version of node incompa
 under the instance's networking (firewall) settings, allow the following port configurations to accept traffic from all IP's
 
 {
-port: 5173
-protocol: any
-source: any
-destination: any
+port: 5173,
+
+protocol: any,
+
+source: any,
+
+destination: any,
+
 }
 
 {
-port: 5000
-protocol: any
-source: any
+port: 5000,
+
+protocol: any,
+
+source: any,
+
 destination: any
 }
 
-5173: frontend
+5173: frontend,
+
 5000: server
 
 you can find this on your azure account.
@@ -47,11 +55,14 @@ you can find this on your azure account.
 2. Install dependencies:
    - `npm install`
 3. Create `.env` and paste your credentials
+
    the .env shall contain two things
    {
-   PORT=5000
+   PORT=5000,
+ 
    MONGO_URI=<connection_string>
    }
+   
 5. Run server:
    - `node index.js`
 
@@ -60,13 +71,22 @@ Server runs at `http://localhost:5000`
 ## Frontend setup
 
 # !IMPORTANT PREREQUISITE
-right now the frontend might not be able to talk to backend server because frontend API requests use localhost:5000. your machine does not understand localhost. use the public IP of the instance instead. where would you change this configuration?
+right now the frontend might not be able to talk to backend server because frontend API requests use localhost:5000.
 
-check in /client/src/App.jsx
+your machine does not understand localhost.
+
+use the public IP of the instance instead.
+
+where would you change this configuration?
+
+# check in /client/src/App.jsx
+
 edit the App.jsx file and update the 
 
 API_BASE_URL to "http:<public_ip>:SERVER_PORT(5000)/api/students"
+
 and save.
+
 now your frontend should be configured to talkto your backend server.
 
 1. Go to `client`
