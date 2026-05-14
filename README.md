@@ -14,7 +14,7 @@ git clone repo_url
 sudo apt update
 DO NOT sudo apt install node as it will install an older version of node incompatible with vite
 
-## IMPORTANT! Install Node Version Manager first (NVM) and use it to install Node Version 20.x.x
+## IMPORTANT! Install Node Version Manager first (NVM) and use it to install Node Version 22.x.x
 1. curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 2. nvm install 22
 3. nvm use 22
