@@ -12,6 +12,8 @@ git clone repo_url
 
 # update packages
 sudo apt update
+
+
 DO NOT sudo apt install node as it will install an older version of node incompatible with vite
 
 ## IMPORTANT! Install Node Version Manager first (NVM) and use it to install Node Version 22.x.x
@@ -29,7 +31,7 @@ protocol: any,
 
 source: any,
 
-destination: any,
+destination: any
 
 }
 
@@ -41,11 +43,12 @@ protocol: any,
 source: any,
 
 destination: any
+
 }
 
-5173: frontend,
+# 5173: frontend
 
-5000: server
+# 5000: server
 
 you can find this on your azure account.
 
