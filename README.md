@@ -112,7 +112,7 @@ now your frontend should be configured to talkto your backend server.
 2. Install dependencies:
    - `npm install`
 3. Run frontend:
-   - `node index.js`
+   - `npm run dev`
 
 Client runs at `http://localhost:5173`
 
